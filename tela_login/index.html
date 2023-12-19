@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/" type="image/x-icon">
+    
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="welcome-box">
+        <h2>Bem-vindo(a)</h2>
+        <p><img src="imagens/Design sem nome.png" width="200px" ></p>
+    <div class="tabs">
+        <div class="tab tab-login" onclick="openTab('login')">Login</div>
+        <div class="tab tab-register" onclick="openTab('register')">Cadastro</div>
+    </div>
+    </div>
+    <div class="form-wrap" id="login-form">
+        <form>
+            <input  type="text" placeholder="Nome de usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <div class="form-wrap hidden" id="register-form">
+        <form >
+            <input type="text" placeholder="Nome de usuário" required>
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openTab(tabName) {
+        var loginForm = document.getElementById('login-form');
+        var registerForm = document.getElementById('register-form');
+
+        if (tabName === 'login') {
+            loginForm.classList.remove('hidden');
+            registerForm.classList.add('hidden');
+        } else {
+            loginForm.classList.add('hidden');
+            registerForm.classList.remove('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

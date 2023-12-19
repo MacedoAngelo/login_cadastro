@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(imagens/WhatsApp\ Image\ 2023-12-14\ at\ 23.20.34.jpeg); 
+    background-repeat: no-repeat, repeat-x;
+    background-position: top right, center;
+   
+    color: #000000; 
+   
+
+}
+
+.container {
+    background-color: #ffffff;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    width: 500px;
+    height: 750px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    transition:  0.3s ease;
+}
+
+.tab:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.form-wrap {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrap input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #96D5FE;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-wrap button {
+    background-color: #96D5FE; 
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition:  0.3s ease;
+}
+.welcome-box {
+    background-color: white; 
+    color: #000000;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+    
+
+.form-wrap button:hover {
+    background-color: #1ba732; 
+}
+
+.hidden {
+    display: none;
+}
