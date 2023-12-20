@@ -18,7 +18,7 @@ $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '';
 $dbName = 'bdfaculdade';
-$port = 3307;
+$port = 3306;
 
 $conexao = new Mysqli($dbHost, $dbUsername, $dbPassword, $dbName, $port);
 if ($conexao->connect_error) {

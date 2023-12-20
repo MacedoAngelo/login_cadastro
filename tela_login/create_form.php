@@ -4,7 +4,7 @@ $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '';
 $dbName = 'bdfaculdade';
-$port = 3307;
+$port = 3306;
 
 // Conectar ao banco de dados
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName, $port);
